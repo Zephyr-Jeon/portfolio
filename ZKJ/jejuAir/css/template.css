@@ -1,0 +1,898 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-size:
+
+.box {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.box::-webkit-scrollbar {
+    display: none; 
+}
+
+*/
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+html::-webkit-scrollbar {
+    display: none; 
+}
+body {
+    overflow-x: hidden;
+    max-width: 1920px;
+}
+
+.wrapper96vw {
+    width: calc(100vw - 40px);
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/*header*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logoHeader img {
+    height: 20px;
+}
+
+header p {
+    display: none;
+}
+
+#hamburgerBtn {
+    display: flex;
+    align-items: center;
+    width: 24px;
+    cursor: pointer;
+}
+
+#hamburgerBtn:hover {
+    transform: scale(1.1);
+}
+
+#hamburger {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: #F25822;
+    transition: all 0.4s;
+}
+
+#hamburger::before,
+#hamburger::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #F25822;
+    position: absolute;
+    transition: all 0.4s
+}
+
+#hamburger::before {
+    top: -8px;
+}
+
+#hamburger::after {
+    top: 8px;
+}
+
+#hamburgerBtn.close #hamburger,
+#hamburgerBtn.back #hamburger {
+    background: transparent;
+}
+
+#hamburgerBtn.close #hamburger::before {
+    top: 0;
+    transform: rotate(45deg)
+}
+
+#hamburgerBtn.close #hamburger::after {
+    top: 0;
+    transform: rotate(135deg)
+}
+
+#hamburgerBtn.back #hamburger::before {
+    top: 0;
+    width: 14px;
+    transform: rotate(45deg);
+    transform-origin: left top;
+}
+
+#hamburgerBtn.back #hamburger::after {
+    top: 0;
+    width: 14px;
+    transform: rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+/*nav*/
+nav {
+    position: fixed;
+    width: 100%;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: flex-end;
+    top: -100vh;
+    transition: all 1s;
+	z-index: 99;
+}
+
+nav.on {
+    top: 0;
+}
+
+#gnbTapArea {
+    height: calc(100vh - 120px);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gnbTap {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    width: 100%;
+}
+
+#gnbTap li {
+    font-size: 1.8rem;
+    padding: 1em 2em;
+    margin: 0 2em;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#gnbTap li:first-child {
+    border-top: 1px solid #eee;
+}
+
+#gnbContentsArea {
+    height: 60px;
+    position: relative;
+}
+
+#gnbContentsBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    opacity: 0
+}
+
+.gnbContents {
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px 20px;
+}
+
+.gnbContents.on {
+    display: flex;
+}
+
+.gnbContents li {
+    width: calc((100% - 20px) / 2);
+    height: 140px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #F25822;
+    border-radius: 20px;
+}
+
+.gnbContents li a {
+    display: block;
+}
+
+.gnbContents li h3 {
+    color: #F25822;
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+}
+
+.gnbContents li p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #999;
+}
+
+#utilTap {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+#utilTap li {
+    font-size: 0;
+    background: url(../images/Icon/account.svg) no-repeat center;
+    width: 24px;
+    height: 24px;
+}
+
+#utilTap li:nth-child(2) {
+    background-image: url(../images/Icon/country.svg);
+}
+
+#utilTap li:nth-child(3) {
+    background-image: url(../images/Icon/share.svg);
+}
+
+#utilTap li:nth-child(4) {
+    background-image: url(../images/Icon/search.svg);
+}
+
+#utilTap li:nth-child(5) {
+    background-image: url(../images/Icon/call.svg);
+}
+
+#utilContents {
+    width: 100%;
+    position: relative;
+}
+
+#utilContents li {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 120px);
+    left: 0;
+    bottom: 60px;
+    background: #fff;
+    display: none;
+}
+
+#utilContents li.on {
+    display: block;
+}
+
+#gnbTap li:nth-child(n+8),
+#gnbSM,
+#gnbTel,
+#gnbSlide {
+    display: none;
+}
+
+/*footer*/
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+#contactTel h1 {
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+}
+
+#contactTel h1 b {
+    font-size: 2.8rem;
+    color: #F25822;
+}
+
+#contactTel p {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    color: #666;
+}
+
+#contactChat,
+#contatctSupport {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #333;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#contactBtn h2 {
+    padding-left: 20px;
+    font-size: 1.6rem;
+}
+
+#contactChat:hover,
+#contatctSupport:hover {
+    background: #F25822;
+    border: 4px solid #F25822;
+}
+
+#contactChat:hover h2,
+#contatctSupport:hover h2 {
+    color: #fff;
+}
+
+#contactChat:hover path,
+#contatctSupport:hover path {
+    fill: #fff;
+}
+
+#footer {
+    background: #0D192C;
+    z-index: -1;
+}
+
+#footer *,
+#footer path {
+    color: #fff;
+    fill: #fff;
+}
+
+#footer dd,
+#footer path {
+    opacity: 0.75;
+}
+
+#footer dd:hover,
+#footer path:hover {
+    opacity: 1;
+}
+
+#footer .wrapper96vw {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 4vw 0;
+}
+
+#footer dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 414px;
+    margin: auto;
+}
+
+#footer dt {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 100%;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+#footer dt::after {
+    display: block;
+    content: '';
+    width: 10%;
+    height: 2px;
+    background: #fff;
+    opacity: 0.75;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%)
+}
+
+#footer dd {
+    width: 33.3%;
+    font-size: 11px;
+    padding: 0.6em 0;
+}
+
+#about dd:nth-of-type(3n+1) {
+    text-align: left;
+}
+
+#about dd:nth-of-type(3n) {
+    text-align: right;
+}
+
+#policy dt,
+#about dt {
+    margin-top: 2em;
+}
+
+#policy dd:nth-of-type(-n+4) {
+    width: 25%;
+}
+
+#policy dd:nth-of-type(n+8) {
+    width: 50%;
+}
+
+#policy dd:nth-of-type(1),
+#policy dd:nth-of-type(5),
+#policy dd:nth-of-type(8) {
+    text-align: left;
+}
+
+#policy dd:nth-of-type(4),
+#policy dd:nth-of-type(7),
+#policy dd:nth-of-type(9) {
+    text-align: right;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 1.4rem;
+    border-top: 1px solid #ccc;
+    margin-top: 12vw;
+}
+
+#copyright h1 img {
+    width: calc(100% - 40px);
+    margin-top: 12vw;
+    max-width: 440px;
+}
+
+#copyright ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 10vw auto;
+    width: calc(100% - 40px);
+    max-width: 300px;
+}
+
+@media screen and (min-width:768px) {
+
+    #gnbSlide {
+        display: block;
+    }
+
+    .wrapper96vw {
+        width: calc(100vw - 60px);
+    }
+
+    header {
+        padding: 24px 30px;
+    }
+
+    #logoHeader img {
+        height: 24px;
+    }
+
+    header p {
+        display: block;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        vertical-align: bottom;
+        font-size: 2.4rem;
+    }
+
+    header p b {
+        color: #fff;
+    }
+
+    /*nav*/
+    nav {
+        justify-content: flex-start;
+        min-height: 600px;
+    }
+
+    #gnbTapArea {
+        height: 20vh;
+        background: none;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #gnbTap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 30px;
+    }
+
+    #gnbTap li {
+        padding: 1em 0;
+        margin: 0;
+        font-size: 1.4rem;
+        color: #666;
+    }
+
+    #gnbTap li:hover {
+        color: #222;
+    }
+
+    #gnbTap li.on {
+        color: #F25822;
+        font-weight: 700;
+        position: relative;
+    }
+
+    #gnbTap li.on::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: #F25822;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #gnbContentsArea {
+        height: 60vh;
+    }
+
+    #gnbContentsBox {
+        height: calc(100% - 60px);
+        position: relative;
+    }
+
+    .gnbContents {
+        margin: 0 30px;
+        width: 80%;
+        max-width: 960px;
+        display: none;
+    }
+
+    .gnbContents li {
+        width: calc((100% - 60px) / 3);
+        height: 150px;
+        margin: 15px 0;
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+    #utilTap {
+        background: #fff;
+        border-top: 1px solid #eee;
+    }
+
+    #utilContents li {
+        height: calc(60vh - 60px);
+    }
+
+    #gnbSlide {
+        height: 20vh;
+        display: flex;
+    }
+
+    #gnbSlide > div {
+        padding: 20px;
+        width: 100%;
+
+    }
+
+    #gnbSlide img {
+        padding: 1vh 0.5vh;
+        height: calc(20vh - 2vh);
+    }
+
+    #contact {
+        flex-direction: row;
+    }
+
+    #contactTel h1 {
+        font-size: 2.8rem;
+        /*border-bottom: 2px solid #999;*/
+    }
+
+    #contactTel h1 b {
+        font-size: 3.6rem;
+    }
+
+    #contactTel P {
+        padding-top: 20px;
+        font-size: 1.8rem;
+    }
+
+    #contactChat h2 {
+        font-size: 1.8rem;
+    }
+
+    #footer .wrapper96vw {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #about,
+    #policy {
+        width: 45%;
+    }
+
+    #copyright {
+        width: 100%;
+    }
+
+    #footer dl {
+        max-width: 600px;
+    }
+
+    #footer dt {
+        font-size: 20px
+    }
+
+    #footer dd {
+        font-size: calc(0.586vw + 6.3px);
+    }
+
+    /*
+  #footer dd {
+    width: 33.3%;
+    font-size: 3.055px;
+    padding: 0.6em 0;
+  }
+
+  #about dd:nth-of-type(3n+1) {
+    text-align: left;
+  }
+
+  #about dd:nth-of-type(3n) {
+    text-align: right;
+  }
+*/
+
+    #policy dt,
+    #about dt {
+        margin-top: 0;
+    }
+
+    /*
+
+  #policy dd:nth-of-type(-n+4) {
+    width: 25%;
+  }
+
+  #policy dd:nth-of-type(n+8) {
+    width: 50%;
+  }
+
+  #policy dd:nth-of-type(1),
+  #policy dd:nth-of-type(5),
+  #policy dd:nth-of-type(8) {
+    text-align: left;
+  }
+
+  #policy dd:nth-of-type(4),
+  #policy dd:nth-of-type(7),
+  #policy dd:nth-of-type(9) {
+    text-align: right;
+  }
+*/
+
+    #copyright {
+        text-align: center;
+        font-size: 1.4rem;
+        border-top: 1px solid #ccc;
+        margin-top: 40px;
+    }
+
+    #copyright h1 img {
+        width: calc(100% - 40px);
+        margin-top: 60px;
+        max-width: 400px;
+    }
+
+    #copyright ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto;
+        width: calc(100% - 40px);
+        max-width: 300px;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+    
+
+    .wrapper1200 {
+        width: 1200px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    #gnbSM,
+    #gnbTel,
+    #gnbTap li:nth-child(n+8) {
+        display: block;
+    }
+
+    #utilTap {
+        display: none;
+    }
+
+    .wrapper96vw {
+        width: 96vw;
+    }
+
+    header {
+        padding: 40px;
+    }
+
+    header p {
+        font-size: 3.2rem;
+    }
+
+    #logoHeader img {
+        height: 2vw;
+        max-height: 40px;
+    }
+
+    #gnbTap {
+        width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    #gnbTap svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #gnbTap svg path {
+        fill: #666
+    }
+
+    #gnbTap svg:hover path {
+        fill: #333;
+    }
+
+    #gnbTap li.on path {
+        fill: #F25822;
+    }
+
+    #util {
+        background: #fff;
+        border-top: 1px solid #eee;
+    }
+
+    #util1200 {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    #gnbSM {
+        display: flex;
+        justify-content: space-between;
+        width: 272px;
+        font-size: 0;
+        align-items: center;
+    }
+
+    #gnbSM li a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #gnbSM li path {
+        fill: #666;
+    }
+
+    #gnbSM li:hover path {
+        fill: #F25822;
+    }
+
+    #gnbTel {
+        font-size: 2.4rem;
+        line-height: 60px;
+        font-weight: 500;
+    }
+
+    #gnbTel b {
+        font-size: 3.2rem;
+        color: #F25822;
+        padding-left: 20px;
+    }
+
+    footer {
+        z-index: -1;
+    }
+
+    #contactTel h1 {
+        border: none;
+        font-size: 2vw;
+    }
+
+    #contactTel h1 b {
+        font-size: 4vw;
+    }
+
+    #contactTel p {
+        display: inline-block;
+    }
+
+    #contactTel p:nth-child(3) {
+        padding-left: 20px;
+    }
+
+    #contactBtn {
+        display: flex;
+    }
+
+    #contatctSupport {
+        margin-left: 20px;
+    }
+
+    #contactBtn h2 {
+        font-size: 1.6vw;
+    }
+
+    #about {
+        order: 1;
+        flex: 1;
+    }
+
+    #policy dt,
+    #about dt {
+        margin-top: 2em;
+    }
+
+    #copyright {
+        order: 2;
+        flex: 1;
+        margin: 0 4vw;
+        border-top: none;
+        position: relative;
+    }
+
+    #copyright::before,
+    #copyright::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 180px;
+        width: 0.1px;
+        background: #ccc;
+        /*left: 0;*/
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #copyright::after {
+        right: -15px;
+    }
+
+    #copyright h1 img {
+        margin-top: 30px;
+    }
+
+    #copyright img {
+        margin: 0 2vw;
+    }
+
+    #policy {
+        order: 3;
+        flex: 1;
+    }
+
+    #footer dd {
+        font-size: calc(0.234375vw + 9.5px)
+    }
+}

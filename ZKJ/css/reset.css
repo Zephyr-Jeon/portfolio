@@ -1,0 +1,88 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--clreee, #fff);
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address,
+i,
+em {
+  font-style: normal;
+}
+
+/*테이블관련*/
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+/*form관련*/
+legend {
+  display: none;
+}
+
+fieldset {
+  border: none;
+}
+
+input,
+select,
+textarea,
+button,
+label {
+  box-sizing: border-box;
+}
+
+/*클리어픽스*/
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*이미지관련*/
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blind {
+  display: none;
+}
+
+/*component*/
+:root {
+  --clrfff: #fff;
+  --clreee: #eee;
+  --clr000: #000;
+  --clr222: #222;
+  --clr333: #333;
+  --clr-section: #1a1c23;
+  --magenta: #ef4578;
+  --yellow: #f2ab41;
+  --sky: #40ade9;
+  --title: calc(10vw + 8px);
+  --sub-title: calc(2.05vw + 20.62px); /*64 to 28*/
+  --title3: calc(1.795vw + 13.54px); /*48 to 20*/
+  --title4: calc(0.77vw + 17.23px); /*32 to 20*/
+  --title5: calc(0.641vw + 11.7px); /*24 to 18*/
+}
