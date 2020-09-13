@@ -1,0 +1,37 @@
+@charset 'utf-8';
+*{margin: 0;padding: 0; color: #222; word-break: keep-all; }
+ul,ol,li{list-style: none}
+a{text-decoration: none;color: #222}
+/*a:hover{text-decoration: underline}*/
+address, i{font-style: normal}
+h{font-weight: 400}
+/*테이블관련*/
+
+table{border-collapse: collapse}
+caption{display: none}
+
+/*form관련*/
+legend{display: none}
+fieldset{border:none}
+input,select,textarea,button,label{box-sizing: border-box}
+
+/*클리어픽스*/
+.clearfix::after{content: '';display: block;clear:both}
+
+
+/*이미지관련*/
+img{vertical-align: middle}
+.blind{display: none;}
+
+
+
+
+/*component*/
+
+
+
+
+
+
+
+

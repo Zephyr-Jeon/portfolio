@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Fan Museum</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/slickSlider/slick.min.js"></script>
+    <link rel="stylesheet" href="libs/slickSlider/slick.css">
+    <link rel="stylesheet" href="libs/slickSlider/slick-theme.css">
+
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/template.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div id="gnb">
+                <div id="hamburger">
+                    <i class="blind">menu</i>
+                    <span id="topBar"></span>
+                    <span id="middleBar"></span>
+                    <span id="bottomBar"></span>
+                </div>
+                <a href="#" id="gnbLogo"></a>
+                <div id="toTop"><i class="blind">toTop</i></div>
+            </div>
+            <div id="allMenu">
+                <ul id="menuControl">
+                    <li>allMenuList</li>
+                    <li>account</li>
+                    <li>call</li>
+                    <li>location</li>
+                    <li>language</li>
+                </ul>
+                <ul id="subMenu">
+                    <li class="on">
+                        <ul id="allMenuList" class="subMenuDepth2">
+                            <li>
+                                <span>박물관 소개</span>
+                                <ul class="subMenuDepth3">
+                                    <li><a href="#">박물관 소개</a></li>
+                                    <li><a href="#">관람 안내</a></li>
+                                    <li><a href="#">연락처</a></li>
+                                    <li><a href="#">오시는 길</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>우리 부채 알기</span>
+                                <ul class="subMenuDepth3">
+                                    <li><a href="#">부채의 역사</a></li>
+                                    <li><a href="#">부채의 종류</a></li>
+                                    <li><a href="#">부채 제작 방법</a></li>
+                                    <li><a href="#">부채 이야기</a></li>
+                                    <li><a href="#">선자장</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>전시 안내</span>
+                                <ul class="subMenuDepth3">
+                                    <li><a href="#">기획 전시 안내</a></li>
+                                    <li><a href="#">상설 전시 안내</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>상품 안내</span>
+                                <ul class="subMenuDepth3">
+                                    <li><a href="#">전체 상품 보기</a></li>
+                                    <li><a href="#">주문 제작 안내</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>체험 및 교육</span>
+                                <ul class="subMenuDepth3">
+                                    <li><a href="#">체험 및 교육 과정 안내</a></li>
+                                    <li><a href="#">신청 절차 및 예약 현황</a></li>
+                                </ul>
+                            </li>
+                            <li><span>사진전</span></li>
+                            <li>
+                                <span>최신 소식</span>
+                                <ul class="subMenuDepth3">
+                                    <li><a href="#">최신 기사</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>ACCOUNT</li>
+                    <li>CALL</li>
+                    <li>LOCATION</li>
+                    <li>LANGUAGE</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="clearfix">
+        <section id="landing">
+            <h1 class="blind">landing section</h1>
+            <div id="landingVideo">
+                <video autoplay muted loop>
+                    <source src="imges/mainVideo.mp4">
+                </video>
+            </div>
+            <div id="landingText">
+                <h2>한</h2>
+                <h2>국</h2>
+                <h2>의</h2>
+                <h1>부</h1>
+                <h1>채</h1>
+                <a href="#">더<span></span>알아보기</a>
+            </div>
+            <span>Scroll<i>Down</i></span>
+        </section>
+        <section id="featuredExhi">
+            <h1 class="title">기획전시</h1>
+            <div class="exhiBox" id="currentExhi">
+                <img src="imges/exhibition/exhibition_current.png" alt="현재 전시">
+                <div class="exhiText">
+                    <p>현재 전시</p>
+                    <span></span>
+                    <h3>특별기획 부채 문화주간 - '합죽선 대를 잇다'</h3>
+                    <i>2020.07.09 - 2020.07.28</i>
+                </div>
+            </div>
+            <div class="exhiBox" id="scheduledExhi">
+                <img src="imges/exhibition/exhibition_scheduled.png" alt="현재 전시">
+                <div class="exhiText">
+                    <p>현재 전시</p>
+                    <span></span>
+                    <h3>특별기획 부채 문화주간 - '합죽선 대를 잇다'</h3>
+                    <i>2020.07.09 - 2020.07.28</i>
+                </div>
+            </div>
+        </section>
+        <section id="permanentExhi">
+            <h1 class="title">상설전시</h1>
+            <h2>EXPLORE THE COLLECTION</h2>
+            <div class="exhiSlider">
+                <div><img src="imges/exhibition/exhiSlide01.png" alt="01"></div>
+                <div><img src="imges/exhibition/exhiSlide01.png" alt="01"></div>
+                <div><img src="imges/exhibition/exhiSlide01.png" alt="01"></div>
+                <div><img src="imges/exhibition/exhiSlide01.png" alt="01"></div>
+            </div>
+            <div id="pagerExhi"></div>
+            <p>더 많은 <strong>유물과 작품</strong>들을 <strong>상설 전시관</strong>에서 관람하실 수 있습니다.</p>
+        </section>
+        <section id="product">
+            <h1 class="title">상품 안내</h1>
+            <div class="productFan">
+                <div class="productFanTitle">
+                    <p>접부채 (합죽선)</p>
+                    <a href="#"></a>
+                </div>
+                <div class="productFanSlider">
+                    <div><img src="imges/products/folding/foldingFan01%201.png" alt="foldingFan01"></div>
+                    <div><img src="imges/products/folding/foldingFan01%201.png" alt="foldingFan01"></div>
+                    <div><img src="imges/products/folding/foldingFan01%201.png" alt="foldingFan01"></div>
+                    <div><img src="imges/products/folding/foldingFan01%201.png" alt="foldingFan01"></div>
+                </div>
+            </div>
+            <div class="productFan">
+                <div class="productFanTitle">
+                    <p>단부채 (방구부채)</p>
+                    <a href="#"></a>
+                </div>
+                <div class="productFanSlider">
+                    <div><img src="imges/products/singular/singleFan01%201.png" alt="singularFan01"></div>
+                    <div><img src="imges/products/singular/singleFan01%201.png" alt="singularFan01"></div>
+                    <div><img src="imges/products/singular/singleFan01%201.png" alt="singularFan01"></div>
+                    <div><img src="imges/products/singular/singleFan01%201.png" alt="singularFan01"></div>
+                </div>
+            </div>
+            <div id="custom">
+                <h3><a href="">주문 제작 및 작품 의뢰</a></h3>
+            </div>
+            <a href="#" id="allProduct">전체 상품 둘러보기</a>
+        </section>
+        <section id="edu">
+            <h1 class="title">체험 및 교육 안내</h1>
+            <a href=""><img src="imges/edu.png" alt="experience and education"></a>
+            <p>전주 한옥마을 부채 박물관에서 우리 전통문화인 부채 만들기를 직접 체험해 보세요.</p>
+        </section>
+        <section id="photo">
+            <h1 class="title">사진전</h1>
+            <div class="photoSlider">
+                <div><img src="imges/photos/photo01.png" alt="photo01"></div>
+                <div><img src="imges/photos/photo01.png" alt="photo01"></div>
+                <div><img src="imges/photos/photo01.png" alt="photo01"></div>
+                <div><img src="imges/photos/photo01.png" alt="photo01"></div>
+            </div>
+            <div id="connect">
+                <h1>Connect With Us</h1>
+                <p>전주 부채 박물관의 최신 소식을 놓치지 마세요.</p>
+                <div id="emailBox">
+                    <label for="email" class="blind"></label>
+                    <input type="email" id="email" placeholder="이메일을 입력하세요.">
+                    <button value="submit">완료</button>
+                </div>
+                <ul id="sm">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="landingFooter">
+            <h1 class="title">전주 부채 박물관</h1>
+            <p>조선시대의 합죽선과 접부채, 단선(방구부채) 그리고 근대유물까지 부채의 화려한 전성기를 볼 수 있는 부채 박물관에 관심있는 여러분을 초대합니다.</p>
+            <a href="#">상세 정보</a>
+            <ul id="info">
+                <li>
+                    <p>관람 정보</p>
+                    <div class="infoBox" id="infoViewing">
+                        <span></span>
+                        <div>
+                            <p>AM 10:00 - PM 6:00</p>
+                            <i>* 매주 월요일 휴관</i>
+                        </div>
+                    </div>
+                    <div class="infoBox" id="infoTicket">
+                        <span></span>
+                        <div>
+                            <p>입장료: 1인 1,000원</p>
+                            <i>* 미취학 아동 및 65세 이상 무료</i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>오시는 길</p>
+                    <div class="infoBox" id="infoVisit">
+                        <span></span>
+                        <div>
+                            <p>560-120 전라북도 전주시 완산구
+                                청경로 37(동서학동 83-2)</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>문의 연락처</p>
+                    <div class="infoBox" id="infoContact">
+                        <span></span>
+                        <div>
+                            <p>TEL: 063) 231 - 8527</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div id="policy">
+                <ul>
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일 수집거부</a></li>
+                </ul>
+                <p>COPYRIGHT 2015 JEONJU FAN MUSEUM. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <div id="footerBuffer"></div>
+</body></html>

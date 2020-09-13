@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+    <title>ROCK SCISSORS PAPER</title>
+  </head>
+  <body>
+    <header>
+      <div class="rsp-text-box">
+        <h2 id="rspText" class="rsp-text">rock scissors paper</h2>
+      </div>
+      <div class="play">
+        <h1 id="playBtn" class="play-btn">play</h1>
+      </div>
+      <ul class="rsp-box">
+        <li class="rsp"><img src="img/rock-illu.svg" alt="rock" /></li>
+        <li class="rsp"><img src="img/scissors-illu.svg" alt="scissors" /></li>
+        <li class="rsp"><img src="img/paper-illu.svg" alt="paper" /></li>
+      </ul>
+    </header>
+    <main class="off">
+      <section class="board">
+        <h1 id="boardMsg" class="board-msg">make a choice</h1>
+      </section>
+      <div class="field">
+        <article id="you">
+          <h2>you</h2>
+          <h1 id="yourScore">00</h1>
+        </article>
+        <article id="yours">
+          <img src="img/rock-illu.svg" alt="" />
+        </article>
+        <article id="computer">
+          <h2>computer</h2>
+          <h1 id="computerScore">00</h1>
+        </article>
+        <article id="computers">
+          <img src="img/rock-illu-white.svg" alt="" />
+        </article>
+      </div>
+      <ul class="options">
+        <li class="option" id="rock">
+          <img src="img/rock-text.svg" alt="rock" />
+        </li>
+        <li class="option" id="scissors">
+          <img src="img/scissors-text.svg" alt="scissors" />
+        </li>
+        <li class="option" id="paper">
+          <img src="img/paper-text.svg" alt="paper" />
+        </li>
+      </ul>
+    </main>
+    <footer class="off">
+      <div id="reset">
+        <h3 id="resetBtn" class="reset-btn">reset</h3>
+      </div>
+    </footer>
+  </body>
+</html>

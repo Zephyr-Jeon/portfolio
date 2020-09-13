@@ -1,0 +1,232 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+/*font-family: 'Gugi', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Serif KR', serif;*/
+html,
+body {
+    font-size: 62.5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: url(../imges/bg.png);
+    height: 100%;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+}
+
+nav > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#gnb {
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0 20px;
+    height: calc(57.8125vh - 310px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.4s
+}
+
+#hamburger {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    align-self: center;
+}
+
+#topBar,
+#middleBar,
+#bottomBar {
+    height: 2px;
+    background: #222;
+    display: block;
+    position: absolute;
+    transition: all 1s;
+    width: 100%;
+    left: 0;
+}
+
+#topBar {
+    top: 0;
+}
+
+#middleBar {
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+#bottomBar {
+    bottom: 0;
+}
+
+#hamburger.on #middleBar {
+    display: none;
+}
+
+#hamburger.on #topBar {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(225deg)
+}
+
+#hamburger.on #bottomBar {
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-225deg)
+}
+
+#gnbLogo {
+    display: block;
+    width: calc(39.0625vh - 116px);
+    height: calc(13.28125vh - 39px);
+    align-self: center;
+    background: url(../imges/icons/logoFull.svg) no-repeat center;
+    background-size: 100%;
+    transition: all 0.4s
+}
+
+/*#gnbLogo h2{
+    font-size: calc(3.90625vh - 11px)
+}
+#gnbLogo h1{
+    font-size:  calc(5.46875vh - 17px);
+    text-align: right;
+    position: relative;
+}
+#gnbLogo h1::before{
+    content: '';
+    position: absolute;
+    background: url(../imges/icons/logo.svg) no-repeat center;
+	background-size: cover;
+    width: calc(4.6875vh - 10px);
+    height: calc(4.6875vh - 10px);
+    left: calc(6.25vh - 21px);
+    top: 50%;
+	transform: translateY(-50%);
+}*/
+#toTop {
+    background: url(../imges/icons/toTop_222.svg) no-repeat center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    align-self: center;
+}
+
+#allMenu {
+    display: none;
+}
+
+#menuControl {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 18px 20px;
+    background: #fff;
+    height: 60px;
+}
+
+#menuControl li {
+    background: url(../imges/icons/allMenu_222.svg) no-repeat center;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+#menuControl li:nth-child(2) {
+    background-image: url(../imges/icons/account_222.svg);
+}
+
+#menuControl li:nth-child(3) {
+    background-image: url(../imges/icons/call_222.svg);
+}
+
+#menuControl li:nth-child(4) {
+    background-image: url(../imges/icons/location_222.svg);
+}
+
+#menuControl li:nth-child(5) {
+    background-image: url(../imges/icons/language_222.svg);
+}
+
+#subMenu {
+    background: url(../imges/bg.png);
+    position: relative;
+    height: calc(100vh - 120px);
+}
+
+#subMenu > li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#subMenu > li.on {
+    display: block;
+}
+
+#allMenuList {
+    border-top: 6px solid #DB7D10;
+    border-bottom: 8px solid #DB7D10;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#allMenuList > li {
+    /*height: 39px;*/
+    border-top: 2px solid #DB7D10;
+}
+
+#allMenuList > li > span {
+    font-size: 16px;
+    line-height: 39px;
+    padding-left: 20px;
+    background: #fff;
+    display: block;
+    cursor: pointer;
+}
+
+.subMenuDepth3 {
+    font-size: 14px;
+    line-height: 36px;
+    display: none;
+}
+
+.subMenuDepth3 > li {
+    background: #efefef;
+    height: 36px;
+    padding-left: 40px;
+}
+
+.subMenuDepth3 > li > a {
+    color: #666;
+}
+
+.subMenuDepth3 > li:nth-child(2n) {
+    background: #dfdfdf
+}
+
+#footerBuffer {
+    background: #393D2A;
+    height: 60px;
+}

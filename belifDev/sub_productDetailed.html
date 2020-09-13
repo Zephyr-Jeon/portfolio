@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belif, believe in truth</title>
+    <script src="libs/jquery-1.12.4.min.js"></script>
+    <script src="libs/bxslider/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="libs/bxslider/jquery.bxslider.min.css">
+    
+    <!--custom-->
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+    <link rel="stylesheet" type="text/css" href="css/sub_productDetailed.css">
+    <script src="js/template.js"></script>
+    <script src="js/sub_productDetailed.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="logo_header"><a href="http://127.0.0.1:50385/index.html">belifLogo</a></h1>
+        <div id="menu">
+           <div id="hamburger">
+                <a href="#" id="hamburger_icon">
+                       <span id="hamburger_top"></span>
+                       <span id="hamburger_middle"></span>
+                       <span id="hamburger_bottom"></span>
+                </a>
+            </div>
+            <div id="menu_area">
+                <ul class="menu_depth1">
+                    <li>
+                        <a href="#" class="icon_account">account</a>
+                        <div class="menu_depth2 account">
+                            <h1>LOGIN</h1>
+                            <div class="account_inner">
+                                <div><input type="email" placeholder="Email"></div>
+                                <div><input type="password" placeholder="Password"></div>
+                                <a href="#">Can't remember your email or password?</a>
+                                <div><a href="#">SIGN IN</a></div>
+                                <p>Not a member yet?<br>Create account and get credit from each purchase !</p>
+                                <a href="#">CREATE ACCOUNT</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--//account-->
+                    <li>
+                        <a href="#" class="icon_view">view</a>
+                        <div class="menu_depth2 view">
+                            <h2>RECENTLY VIEWED</h2>
+                            <ul>
+                                <li>
+                                   <div class="recentlyViewed_item">
+                                    <a href="#">
+                                        <img src="imgs/products/recentlyViewed/aquabombjellycleansing.png" alt="aquabombjellycleansing">
+                                        <div>
+                                        AQUABOMB JELLY CLEANSER
+                                        <span>$34.00</span>
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <a href="#">SHOP NOW</a>
+                                        <div class="recentlyViewed_item_icon">
+                                            <a href="#">like</a>
+                                            <a href="#">share</a>
+                                            <a href="#">close</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                   <div class="recentlyViewed_item">
+                                    <a href="#">
+                                        <img src="imgs/products/recentlyViewed/aquabombjellycleansing.png" alt="aquabombjellycleansing">
+                                        <div>
+                                        AQUABOMB JELLY CLEANSER
+                                        <span>$34.00</span>
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <a href="#">SHOP NOW</a>
+                                        <div class="recentlyViewed_item_icon">
+                                            <a href="#">like</a>
+                                            <a href="#">share</a>
+                                            <a href="#">close</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                   <div class="recentlyViewed_item">
+                                    <a href="#">
+                                        <img src="imgs/products/recentlyViewed/aquabombjellycleansing.png" alt="aquabombjellycleansing">
+                                        <div>
+                                        AQUABOMB JELLY CLEANSER
+                                        <span>$34.00</span>
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <a href="#">SHOP NOW</a>
+                                        <div class="recentlyViewed_item_icon">
+                                            <a href="#">like</a>
+                                            <a href="#">share</a>
+                                            <a href="#">close</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li>
+                                   <div class="recentlyViewed_item">
+                                    <a href="#">
+                                        <img src="imgs/products/recentlyViewed/aquabombjellycleansing.png" alt="aquabombjellycleansing">
+                                        <div>
+                                        AQUABOMB JELLY CLEANSER
+                                        <span>$34.00</span>
+                                        </div>
+                                    </a>
+                                    <div>
+                                        <a href="#">SHOP NOW</a>
+                                        <div class="recentlyViewed_item_icon">
+                                            <a href="#">like</a>
+                                            <a href="#">share</a>
+                                            <a href="#">close</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--//view-->
+                    <li>
+                        <a href="#" class="icon_country">country</a>
+                        <div class="menu_depth2 country">
+                            <h2>LANGUAGE &amp; CURRENCY</h2>
+                            <div>
+                                <div class="language">
+                                    <div>ENGLISH</div>
+                                    <p>Select Language</p>
+                                    <fieldset>
+                                        <legend>language</legend>
+                                        <label for="korean"><input type="radio" name="language" value="korean" id="korean">KOREAN</label>
+                                        <label for="franch"><input type="radio" name="language" value="korean" id="franch">FRANCH</label>
+                                        <label for="japanese"><input type="radio" name="language" value="korean" id="japanese">JAPANESE</label>
+                                        <label for="chinese"><input type="radio" name="language" value="korean" id="chinese">CHINESE</label>
+                                    </fieldset>
+                                </div>
+                                <div class="currency">
+                                    <div><p>USD</p></div>
+                                    <p>Select Currency</p>
+                                    <fieldset>
+                                        <legend>currency</legend>
+                                        <label for="kow"><input type="radio" name="currency" value="kow" id="kow">KOW</label>
+                                        <label for="eur"><input type="radio" name="currency" value="eur" id="eur">EUR</label>
+                                        <label for="jpy"><input type="radio" name="currency" value="jpy" id="jpy">JPY</label>
+                                        <label for="cny"><input type="radio" name="currency" value="cny" id="cny">CNY</label>
+                                        <label for="cad"><input type="radio" name="currency" value="cad" id="cad">CAD</label>
+                                    </fieldset>
+                                </div>
+                                <a href="#">APPLY</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--//country-->
+                    <li>
+                        <a href="#" class="icon_help">help</a>
+                        <div class="menu_depth2 help">
+                            <h2>HOW CAN WE HELP YOU?</h2>
+                            <div>
+                                <div><input type="text"></div>
+                                <div><input type="password"></div>
+                                <p>Can't remember your email or password?</p>
+                                <button>SIGN IN</button>
+                                <p>Not a member yet?<br>Create account and get credit from each purchase !</p>
+                                <a>CREATE ACCOUNT</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--//help-->
+                    <li>
+                        <a href="#" class="icon_accessibility">accessibility</a>
+                        <div class="menu_depth2 accessibility">
+                            <h2>ACCESSIBILITY</h2>
+                            <div>
+                                <div><input type="text"></div>
+                                <div><input type="password"></div>
+                                <p>Can't remember your email or password?</p>
+                                <button>SIGN IN</button>
+                                <p>Not a member yet?<br>Create account and get credit from each purchase !</p>
+                                <a>CREATE ACCOUNT</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--//accessibility-->
+                </ul>
+            </div>
+         </div>
+        <!--//menu-->
+        <div id="gnb">
+            <div class="inner">
+                <ul class="gnb_depth1 clearfix">
+                    <li>
+                        <div><a href="#">PRODUCT</a></div>
+                        <ul class="gnb_depth2 gnb_product">
+                                <li>
+                                    <a href="#">
+                                        <p><span>NEW</span></p>
+                                        <div><img src="imgs/gnb/New.png" alt="newProduct"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p><span>BEST</span></p>
+                                        <div><img src="imgs/gnb/Best.png" alt="Product"></div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://127.0.0.1:57865/sub_allProduct.html">
+                                    <p><span>ALL PRODUCTS</span></p>
+                                    </a>
+                                    <ul class="gnb_depth3">
+                                        <li>
+                                            <a href="#">by category</a>
+                                            <ul class="gnb_depth4">
+                                                <li><a href="#">Mosturizers</a></li>
+                                                <li><a href="#">Essence + Serums</a></li>
+                                                <li><a href="#">Toners + Mist</a></li>
+                                                <li><a href="#">Eye Care</a></li>
+                                                <li><a href="#">Masks</a></li>
+                                                <li><a href="#">Cleansers</a></li>
+                                                <li><a href="#">Body + Sunblocks</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">by concern</a>
+                                            <ul class="gnb_depth4">
+                                                <li><a href="#">Dryness + Dehydration</a></li>
+                                                <li><a href="#">Dullness + Uneven Skin</a></li>
+                                                <li><a href="#">Fine Lines + Wrinkles</a></li>
+                                                <li><a href="#">Firmness + Elasticity</a></li>
+                                                <li><a href="#">Redness + Sensitivity</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">by collection</a>
+                                            <ul class="gnb_depth4">
+                                                <li><a href="#">Bomb</a></li>
+                                                <li><a href="#">Peat</a></li>
+                                                <li><a href="#">Chamomile</a></li>
+                                                <li><a href="#">Pore Cleanser</a></li>
+                                                <li><a href="#">First Aid</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                        </ul>
+                    </li>
+                    <!--//gnb_depth1_product-->
+                    <li>
+                        <div><a href="#">BELIF STORY</a></div>
+                        <ul class="gnb_depth2 gnb_belifStory">
+                                <li>
+                                    <a href="#">
+                                        <p><span>ABOUT US</span></p>
+                                        <img src="imgs/gnb/gnb_belifStory01.png" alt="logo" id="gnb_belifStory01">
+                                        <p>Belif brand story</p>
+                                        <p>Core valuses &amp; Philosophy</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p><span>HERBAL FORMULAR</span></p>
+                                        <img src="imgs/gnb/gnb_belifStory02.png" alt="herbs" id="gnb_belifStory02">
+                                        <p>How and what herbs make our product special?</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <img src="imgs/gnb/gnb_belifStory03.png" alt="herbs">
+                                </li>
+                        </ul>
+                    </li>
+                    <!--//gnb_depth1_story-->
+                    <li>
+                        <div><a href="#">EXPLORE</a></div>
+                        <ul class="gnb_depth2 gnb_explore">
+                            <li>
+                                <a href="">ARTICLES</a>
+                                <ul class="gnb_depth3">
+                                    <li>
+                                        <a href="#">
+                                            <div><img src="imgs/gnb/gnb_explore01.png" alt=""></div>
+                                            <p>May 04, 2020 | Ashley Williams</p>
+                                            <p>Mother’s Day: Showing your Appreciation</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div><img src="imgs/gnb/gnb_explore02.png" alt=""></div>
+                                            <p>May 15, 2020 | Julia Carpen</p>
+                                            <p>Practicing Self Care During Quarantine</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">SOCIAL MEDIA</a>
+                                <ul class="gnb_depth3">
+                                    <li>
+                                        <a href="#">
+                                            <div><img src="imgs/gnb/gnb_explore03.png" alt=""></div>
+                                            <p>Is Your Skin Dry or Just Dehydrated? | Beauty with Susan Yara</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div><img src="imgs/gnb/gnb_explore04.png" alt=""></div>
+                                            <p>Glass Skin In A Tub - Belif Aqua Bomb Brand Review</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--//gnb_depth1_explore-->
+                    <li>
+                        <div><a href="#">SUPPORT</a></div>
+                        <ul class="gnb_depth2 gnb_support">
+                                <li>
+                                    <a href="#">
+                                        <p><span class="gnb_title">CUSTOMER SERVICE</span></p>
+                                        <p>We’re here to support you</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><p><span class="gnb_title">WHERE TO BUY</span></p></a>
+                                    <p><a href="#" id="gnb_support_branch">Our branch locations</a></p>
+                                    <p><a href="#" id="gnb_support_distributers">Official distributers</a></p>
+                                </li>
+                                <li>
+                                    <img src="imgs/gnb/gnb_support03.png" alt="store">
+                                </li>
+                        </ul>
+                    </li>
+                    <!--//gnb_depth1_support-->
+                    <li>
+                        <div><a href="#">search</a></div>
+                        <div class="gnb_depth2 gnb_search">
+                            <div>
+                                <div id="search_box">
+                                    <div><input type="text" placeholder="TYPE YOUR QUESTIONS HERE"></div>
+                                    <a href="#">search</a>
+                                </div>
+                                <div id="search_faq">
+                                    <p><span class="gnb_title">FREQUENTLY ASKED QUESTIONS</span></p>
+                                    <ul>
+                                        <li>
+                                            <p>ABOUT PRODUCTS</p>
+                                            <a href="#">Q.How should I test your products to make sure I can use them?</a>
+                                            <a href="#">Q.What do you recommend for sensitive skin?</a>
+                                            <a href="#">Q.Can I use your products if I’m pregnant or nursing?</a>
+                                            <a href="#">Q.Is retinyl palmitate the same thing as retinol?</a>
+                                        </li>
+                                        <li>
+                                            <p>ABOUT ACCOUNT</p>
+                                            <a href="#">Q.How do I login and access my account?</a>
+                                            <a href="#">Q.How do I recover my lost password?</a>
+                                            <a href="#">Q.How can I redeem my royalty credits?</a>
+                                            <a href="#">Q.Do you have a satisfaction guarantee on your products?</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--//gnb_depth1_search-->
+                    <li>
+                        <div><a href="#">like</a></div>
+                    </li>
+                    <!--//gnb_depth1_like-->
+                </ul>
+                
+            </div>
+        </div>
+        <div id="gnb_bg"></div>
+        <div id="gnb_bg_search"></div>
+    </header>
+	
+   <div class="header-space"></div>
+   
+   <a href="#" id="toTop"><img src="imgs/icon/toTop.svg" alt="to the top"></a>
+    
+    <div class="lnb-productDetailed">
+		<div></div>
+        <div class="inner">
+            <ul class="lnb-contents">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Description</a></li>
+                <li><a href="#">How to use</a></li>
+                <li><a href="#">Ingredients</a></li>
+                <li><a href="#">Review</a></li>
+            </ul>
+            <ul class="lnb-functions">
+                <li><a href="#"><img src="imgs/icon/Share_24_white.svg" alt="share"></a></li>
+                <li><a href="#"><img src="imgs/icon/Like_24_white.svg" alt="like"></a></li>
+                <li><a href="#">SHOP NOW</a></li>
+            </ul>
+        </div>
+	<div></div>
+    </div>
+    
+    
+    
+    <!--inner-->
+    <section>
+    	<div class="inner clearfix">
+			<div class="product-overview">
+				<ul class="breadcrumbles">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PRODUCT</a></li>
+					<li><a href="#">AQUA BOMB SLEEPING MASK</a></li>
+				</ul>
+				<h2>AQUA BOMB SLEEPING MASK</h2>
+				<div class="prudctImage">
+				</div>
+				<h4>$ 45.00<span>75 ml/2.53 oz</span></h4>
+				<p class="textStyle-detailed">
+					Lock and seal in explosive, powerful moisture all night long for ultra-hydrated and nourished skin with this innovative jelly-pudding sleeping mask. Formulated with skin-soothing Scottish Heather and ultra-hydrating herb Lady's Mantle, this overnight mask replenishes and revives dull, dry skin with explosive hydration for a dewy, radiant glow.  
+				</p>
+			</div>
+        </div>
+    </section>
+    <section>
+    	<div class="inner clearfix">
+   			<div class="poduct-description">
+				<h2 class="landing-title">DESCRIPTION</h2>
+				<div class="whatIs01">
+					<div>
+						<h3>AQUA BOMB SLEEPING MASK</h3>
+						<p class="textStyle-detailed">This innovative jelly-pudding sleeping mask replenishes and revives dull, dry skin with explosive hydration for a dewy, radiant glow.</p>
+					</div>
+				</div>
+  				<div class="whatIs02">
+  					<div><img src="imgs/sub_productDetailed/whatIs02.png" alt=""></div>
+  					<div>
+  						<p class="textStyle-detailed">
+  						Born from the DNA of belif's bestselling Aqua Bomb moisturizer, this overnight mask rejuvenates and replenishes dull, dry, and fatigued skin with explosive hydration for smoother, more supple-looking skin and a healthy glow. The 'memory' formula of this unique jelly-pudding sleeping mask blankets and wraps around the contours of skin with a refreshing layer of intense hydration. Filled with ultra-hydrating herbs like skin-soothing Scottish heather and lady's mantle, the pillow-proof formula is lightweight and absorbs quickly for fuss-free hydration. 
+						</p>
+  					</div>
+  				</div>
+  				<div class="skinType">
+  				    <div>
+  				        <dl>
+  				            <dt>Which skin type<span>is it good for?</span></dt>
+  				            <dd>Normal</dd>
+  				            <dd>Oily</dd>
+  				            <dd>Combination</dd>
+  				            <dd>Dry</dd>
+  				            <dd>Sensitive</dd>
+  				        </dl>
+  				    </div>
+  				    <div>
+  				        <p>Our product will</p>
+  				        <strong>resolve</strong>
+  				        <ul>
+  				            <li>Dullness</li>
+  				            <li>Dryness</li>
+  				            <li>Redness</li>
+  				            <li>Uneven<span> texture</span></li>
+  				        </ul>
+  				    </div>
+  				</div>
+   			</div>
+    	</div>
+    	<div class="research">
+    	    <div class="inner">
+    	        <h3>RESEARCH RESULTS</h3>
+    	        <i>In a 14-day comsumer test</i>
+    	        <ul>
+    	            <li><p>97.8% of people felt immediate cooling effects after applying it</p></li>
+    	            <li><p>96.7 % of people felt that the texture of their skin felt softer and smoother on the following day after applying the Aqua Bomb Sleeping Mask</p></li>
+    	            <li><p>96.7% of people felt that the moisture (in skin) has been replenished overnight</p></li>
+    	            <li><p>95.6% of people felt that the moisture barrier shields moisture loss</p></li>
+    	        </ul>
+    	    </div>
+    	</div>
+    	<div class="formular">
+    	    <div class="inner">
+    	        <h3>HERBAL FORMULARS</h3>
+    	        <div class="formular-original">
+    	            <ul class="formular-photos">
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-original01-raspberry-hover.png" data-original="imgs/sub_productDetailed/formular/formula-original01-raspberry.png"><img src="imgs/sub_productDetailed/formular/formula-original01-raspberry.png" alt="Raspberry"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-original02-wildIndigo-hover.png" data-original="imgs/sub_productDetailed/formular/formula-original02-wildIndigo.png"><img src="imgs/sub_productDetailed/formular/formula-original02-wildIndigo.png" alt="Wild Indigo"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-original03-chickweed-hover.png" data-original="imgs/sub_productDetailed/formular/formula-original03-chickweed.png"><img src="imgs/sub_productDetailed/formular/formula-original03-chickweed.png" alt="Chickweed"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-original04-oatSeed-hover.png" data-original="imgs/sub_productDetailed/formular/formula-original04-oatSeed.png"><img src="imgs/sub_productDetailed/formular/formula-original04-oatSeed.png" alt="Oat Seed"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-original05-catnipFloweringTops-hover.png" data-original="imgs/sub_productDetailed/formular/formula-original05-catnipFloweringTops.png"><img src="imgs/sub_productDetailed/formular/formula-original05-catnipFloweringTops.png" alt="Catnip Flowering Tops"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-original06-calendula-hover.png" data-original="imgs/sub_productDetailed/formular/formula-original06-calendula.png"><img src="imgs/sub_productDetailed/formular/formula-original06-calendula.png" alt="Calendula"></li>
+    	            </ul>
+    	            <div class="formular-text">
+    	                <h4>NAPIERS ORIGINAL FORMULA</h4>
+    	                <p>Packed with anti-oxidants, Napiers Original Formula is the key formula that applies to all belif products with skin calming, anti-trouble, and anti-aging benefits to keep skin healthy and radiant.</p>
+    	            </div>
+    	        </div>
+    	        <div class="formular-aqua">
+    	            <ul class="formular-photos">
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-aqua01-horseTail-hover.png" data-original="imgs/sub_productDetailed/formular/formula-aqua01-horseTail.png"><img src="imgs/sub_productDetailed/formular/formula-aqua01-horseTail.png" alt="Horse Tail"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-aqua02-nettle-hover.png" data-original="imgs/sub_productDetailed/formular/formula-aqua02-nettle.png"><img src="imgs/sub_productDetailed/formular/formula-aqua02-nettle.png" alt="Nettle"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-aqua03-plantain-hover.png" data-original="imgs/sub_productDetailed/formular/formula-aqua03-plantain.png"><img src="imgs/sub_productDetailed/formular/formula-aqua03-plantain.png" alt="Plantain"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-aqua04-chickweed-hover.png" data-original="imgs/sub_productDetailed/formular/formula-aqua04-chickweed.png"><img src="imgs/sub_productDetailed/formular/formula-aqua04-chickweed.png" alt="Chickweed"></li>
+    	                <li data-hover="imgs/sub_productDetailed/formular/formula-aqua05-ladysMantle-hover.png" data-original="imgs/sub_productDetailed/formular/formula-aqua05-ladysMantle.png"><img src="imgs/sub_productDetailed/formular/formula-aqua05-ladysMantle.png" alt="Lady's Mantle"></li>
+    	            </ul>
+    	            <div class="formular-text">
+    	                <h4>NAPIERS AQUA FORMULA</h4>
+    	                <p>The Napiers Aqua Formula moisturizes and cares for the skin by supplying abundant levels of hydration and nutrient-filled minerals and antioxidants for increased elasticity and smooth, supple skin.</p>
+    	            </div>
+    	        </div>
+    	    </div>
+    	</div>
+    	<div class="principle">
+    	    <div class="inner">
+    	        <h3>OUR PRINCIPLES</h3>
+    	        <p>This product is dermatologist-tested and free of mineral oils, petrolatum, synthetic preservatives, dyes, fragrances, and animal origin ingredients.</p>
+    	        <img src="imgs/sub_productDetailed/PrincipleIllustrations.png" alt="principles">
+    	    </div>
+    	</div>
+    </section>
+    
+    
+    
+    <section class="howTo">
+       <h2 class="landing-title">HOW TO USE</h2>
+        <div class="inner">
+            <div class="howTo-top">
+                <h3>Suggested Usage</h3>
+                <p>After or instead of moisturizer, apply a thin layer evenly across your face. Leave on overnight and rinse off in the morning for ultra-hydrated, nourished skin.</p>
+            </div>
+            <ul class="howTo-bottom">
+                <li>1. Gently massage into skin for extra deep hydration. Use when you want your skin to be smoother and more makeup-ready in the mornings!</li>
+                <li>2. Use after being exposed to extreme wind, heat, or cold to nourish and hydrate skin</li>
+                <li>3. Store in refrigerator for extra cooling benefits</li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    
+    <section class="inner">
+       <div class="ingredients">
+        <h2 class="landing-title">INGREDIENTS</h2>
+        <p>Aqua (Water), Dipropylene Glycol, Polyglycerin-3, 1,2-Hexanediol, Glycerin, PEG-240/HDI Copolymer Bis-Decyltetradecet-20 Ether, Polymethylsilsequioxane, Calluna Vulgaris Extract, Dispacus Sylvestris Extract, Crysanthemum Parthenium (Feverfew) Extract, Avena Sative (Oat) Kernel Extract*, CAlendula Officinalis Flower Extract*, Nepeta Cataria Extract*, Rubus Idaeus (Raspberry) Leaf Extract*, Baptisia Tinctoria Root Extract*, Stellaria Media (Chickweed( Extract*+, Malt Extract, Triticum Vulgare (Wheat) Sprout Extract, Alchemilla Vulgaris Leaf Extract+, Equisetum Arvense Leaf Extract+, UrticaDioicia (Nettle) Leaf Extract+, Melia Azadirachta Leaf Extract, Melia Azadirachta Flower Extract,Coccinia Indica Fruit Extract, Solanum Melongena (Eggplant) Fruit Extract, Aloe Barbadensis Flower Extract, Simmondsia Chinesis (Jojoba) Seed Oil, Ocimum Sanctum Leaf Extract, Curcuma Longa (Tumeric) Root Extract, Corallina Officinalis Extract, Panthenol, Tocopheryl Acetate, Lauryl Dimethicone/Polyglycerin-3 Crosspolymer, Acrylates/C10-30 Alkyl Acrylate Crosspolymer, Carbomer, Hydroxyethylcellulose, Trisodium EDTA, Tromethamine, Citrus Aurantium Dulcis (Orange) Peel Oil++, Citrus Aurantifolia (Lime) Oil++, Pelargonium Graveolens Flower Oil++, Rosmarinus Officinalis (Rosemary) Leaf Oil++, Citral, Citronellol, Geraniol, Limonene, Linalool</p>
+        <ul>
+            <li><span>Lady's Mantle: </span>A moisturizing herb used since medieval times by European women to keep their complexion smooth and youthful
+</li>
+       <li><span>Scottish Heather: </span>Soothing herb known for its anti-inflammatory properties
+</li>
+           <li><span>Napiers original formula: </span>The key formula that applies to all belif products with skin calming, anti-trouble, and anti-aging benefits to keep skin healthy and radiant.</li>
+           <li><span>Napiers Aqua formula: </span>Ultra-hydrating formula boosts Hyaluronic acid</li>
+        </ul>
+        </div>
+        <div class="ingredientsBG"></div>
+    </section>
+    
+    
+    
+    <section class="review">
+        <div class="inner">
+			<h2 class="landing-title">REVIEW</h2>
+			<div class="review-function-top">
+				<div>
+					<span></span>
+					<h6>5.0</h6>
+					<i>6 Reviews</i>
+				</div>
+				<a href="#">WRITE A REVIEW</a>
+				<a href="#">Newest</a>
+			</div>
+			<div class="viewArea">
+				<ul>
+					<li class="reviewCard">
+						<div class="reviewCard-text">
+							<h5>BEST SLEEPING MASK EVER!</h5>
+							<p>BEST SLEEPING MASK EVER. This mask makes me face feel like i got a facial every night! Super hydrating but doesn't make my skin oily either!</p>
+						</div>
+						<i>3 months ago</i>
+						<div class="reviewCard-function">
+							<p>5</p>
+							<i>see more</i>
+						</div>
+					</li>
+					<li class="reviewCard">
+						<div class="reviewCard-text">
+							<h5>Absolutely</h5>
+							<p>place it over moisturizer in the evenings and wake up to soft, silky, plumped skin.</p>
+							</div>
+						<i>7 months ago</i>
+						<div class="reviewCard-function">
+							<p>5</p>
+							<i>see more</i>
+						</div>
+					</li>
+					<li class="reviewCard">
+						<div class="reviewCard-text">
+							<h5>10/10 I cannot live without this product!</h5>
+							<p>I apply this religiously every night before bed. It soaks into my skin quickly and doesn't leave any residue on my pillow ...</p>
+						</div>
+						<i>2 years ago</i>
+						<div class="reviewCard-function">
+							<p>5</p>
+							<i>see more</i>
+						</div>
+					</li>
+					<li class="reviewCard">
+						<div class="reviewCard-text">
+							<h5>Belief did it again! I'm absolutely loving this sleeping mask</h5>
+							<p>New favorite addition to my nighttime skincare routine! I've been using this mask twice a week for about 3 weeks now, but I'll be using it more often as the cold ...</p>
+						</div>
+						<i>2 years ago</i>
+						<div class="reviewCard-function">
+							<p>5</p>
+							<i>see more</i>
+						</div>
+					</li>
+					<li class="reviewCard">
+						<div class="reviewCard-text">
+							<h5>Another favorite from Belif!</h5>
+							<p>Having tried both, I prefer the Belif one because it leaves my skin feeling softer and more refreshed. It absorbs quickly and seals in moisture overnight.</p>
+						</div>
+						<i>2 years ago</i>
+						<div class="reviewCard-function">
+							<p>5</p>
+							<i>see more</i>
+						</div>
+					</li>
+					<li class="reviewCard">
+						<div class="reviewCard-text">
+							<h5>Loving this sleeping mask!</h5>
+							<p>Received this product as a complement gift for testing purposes** Loving this product, it's is super moisturizing. Noticed a difference in how soft my skin was ...</p>
+						</div>
+						<i>2 years ago</i>
+						<div class="reviewCard-function">
+							<p>5</p>
+							<i>see more</i>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="review-function-bottom">
+			   <div class="review-pager">
+					<a href="#" class="review-prev"><img src="imgs/icon/Arrow_22_black.png" alt=""></a>
+					<i>01 / 01</i>
+					<a href="#" class="review-next"><img src="imgs/icon/Arrow_22_black.png" alt=""></a>
+				</div>
+				<div class="review-search">
+					<input type="text" placeholder="Type in here">
+					<a href="#"><img src="imgs/icon/Search_24_555.svg" alt="search"></a>
+				</div>
+			</div>
+        </div>
+    </section>
+    
+    
+    
+    <section class="inner relatedProducts">
+    	<div>
+    		<h2 class="landing-title">RELATED PRODUCTS</h2>
+    		<ul>
+    			<li class="productType02">
+                    <a href="#">
+                    <img src="imgs/products/productType02/Group%204.png" alt="eye bomb">
+                    <p><span></span>Moisturizing eye bomb</p>
+                    <i>$ 48.0</i>
+                    </a>
+                    <div class="productType02Hover">
+                        <ul>
+                            <li><a href="#"><img src="imgs/icon/Like_24_white.svg" alt="like"></a></li>
+                            <li><a href="#"><img src="imgs/icon/Share_24_white.svg" alt="share"></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="productType02">
+                    <a href="#">
+                    <img src="imgs/products/productType02/Group%202.png" alt="cleansing herb water">
+                    <p><span></span>The true cream - aqua bomb</p>
+                    <i>$ 38.00</i>
+                    </a>
+                    <div class="productType02Hover">
+                        <ul>
+                            <li><a href="#"><img src="imgs/icon/Like_24_white.svg" alt="like"></a></li>
+                            <li><a href="#"><img src="imgs/icon/Share_24_white.svg" alt="share"></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="productType02">
+                    <a href="#">
+                    <img src="imgs/products/productType02/Group%203.png" alt="cleansing herb water">
+                    <p><span></span>The true cream - moisturizing bomb</p>
+                    <i>$ 38.00</i>
+                    </a>
+                    <div class="productType02Hover">
+                        <ul>
+                            <li><a href="#"><img src="imgs/icon/Like_24_white.svg" alt="like"></a></li>
+                            <li><a href="#"><img src="imgs/icon/Share_24_white.svg" alt="share"></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="productType02">
+                    <a href="#">
+                    <img src="imgs/products/productType02/Group%201.png" alt="cleansing herb water">
+                    <p><span></span>Aqua bomb hydrating toner</p>
+                    <i>$ 28.00</i>
+                    </a>
+                    <div class="productType02Hover">
+                        <ul>
+                            <li><a href="#"><img src="imgs/icon/Like_24_white.svg" alt="like"></a></li>
+                            <li><a href="#"><img src="imgs/icon/Share_24_white.svg" alt="share"></a></li>
+                        </ul>
+                    </div>
+                </li>
+    		</ul>
+    	</div>
+    	<div><img src="imgs/sub_productDetailed/related.png" alt="related products"></div>
+    </section>
+    
+    
+
+    <footer>
+    	<div class="footer-top-area">
+    		<img src="imgs/footer/BottomLogoArea.png" alt="footerlogo">
+    		<div class="inner">
+    			<div class="footer-sm">
+    				<p>Find us on</p>
+    				<ul>
+    					<li><a href="#"><img src="imgs/footer/whh_youtube.svg" alt="youbute"></a></li>
+    					<li><a href="#"><img src="imgs/footer/icon.svg" alt="youbute"></a></li>
+    					<li><a href="#"><img src="imgs/footer/fe_facebook.svg" alt="youbute"></a></li>
+    					<li><a href="#"><img src="imgs/footer/bx_bxl-twitter.svg" alt="youbute"></a></li>
+    					<li><a href="#"><img src="imgs/footer/ic_round-mail.svg" alt="youbute"></a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-email">
+    				<p>Subscribe us and</p>
+    				<strong>Don’t miss out our latest announcements and deals !</strong>
+    				<div>
+    					<input type="text" placeholder="Your e-mail here">
+    					<a href="#">Get it now</a>
+    				</div>
+    			</div>
+    			<div class="footer-distributers">
+    				<p>OUR PRODUCTS ARE AVAILABLE IN STORES INCLUDING</p>
+    				<img src="imgs/footer/locations.png" alt="distributers">
+    			</div>
+    		</div>
+    	</div>
+    	<div class="site-map">
+    		<dl class="inner">
+    			<dt id="siteMap"><a href="#">FULL SITE MAP</a></dt>
+    			<dd>
+    			<div>
+    				<ul class="site-map-depth2">
+    					<li class="sitemap-type1"><a href="#">PRODUCTS</a></li>
+    					<li class="sitemap-type2"><a href="#">NEW</a></li>
+    					<li class="sitemap-type2"><a href="#">BEST SELLERS</a></li>
+    					<li class="sitemap-type2"><a href="#">ALL PRODUCTS</a></li>
+    					<li class="sitemap-type3"><a href="#">by category</a></li>
+    					<li class="sitemap-type4"><a href="#">Moisturizers</a></li>
+    					<li class="sitemap-type4"><a href="#">Essence + Serums</a></li>
+    					<li class="sitemap-type4"><a href="#">Toners + Mist</a></li>
+    					<li class="sitemap-type4"><a href="#">Eye Care</a></li>
+    					<li class="sitemap-type4"><a href="#">Masks</a></li>
+    					<li class="sitemap-type4"><a href="#">Cleansers</a></li>
+    					<li class="sitemap-type4"><a href="#">Body + Sunblocks</a></li>
+    				</ul>
+    				<ul class="site-map-depth2">
+    					<li class="sitemap-type3"><a href="#">by concern</a></li>
+    					<li class="sitemap-type4"><a href="#">Dryness + Dehydration
+</a></li>
+    					<li class="sitemap-type4"><a href="#">Dullness + Uneven Skin
+</a></li>
+    					<li class="sitemap-type4"><a href="#">Fine Lines + Wrinkles
+</a></li>
+    					<li class="sitemap-type4"><a href="#">Firmness + Elasticity
+</a></li>
+    					<li class="sitemap-type4 sitemap-last"><a href="#">Redness + Sensitivity
+</a></li>
+    					<li class="sitemap-type3"><a href="#">by collection</a></li>
+    					<li class="sitemap-type4"><a href="#">Bomb</a></li>
+    					<li class="sitemap-type4"><a href="#">Peat</a></li>
+    					<li class="sitemap-type4"><a href="#">Chamomile</a></li>
+    					<li class="sitemap-type4"><a href="#">Pore Cleanser</a></li>
+    					<li class="sitemap-type4"><a href="#">First AId</a></li>
+    				</ul>
+    				<ul class="site-map-depth2">
+    					<li class="sitemap-type1"><a href="#">BELIF STORY</a></li>
+    					<li class="sitemap-type2"><a href="#">ABOUT US</a></li>
+    					<li class="sitemap-type3"><a href="#">Core value &amp; Philosophy</a></li>
+    					<li class="sitemap-type3"><a href="#">Napiers &amp; Belif brand story</a></li>
+    					<li class="sitemap-type2 sitemap-last"><a href="#">HERBAL FORMULAR</a></li>
+    					<li class="sitemap-type1"><a href="#">EXPLORE</a></li>
+    					<li class="sitemap-type2"><a href="#">ARTICILES</a></li>
+    					<li class="sitemap-type2"><a href="#">SOCIAL MEDIA</a></li>
+    				</ul>
+    				<ul class="site-map-depth2">
+    					<li class="sitemap-type1"><a href="#">SUPPORT</a></li>
+    					<li class="sitemap-type2"><a href="#">CUSTOMER SERVICE</a></li>
+    					<li class="sitemap-type3"><a href="#">Contact us</a></li>
+    					<li class="sitemap-type3"><a href="#">FAQs</a></li>
+    					<li class="sitemap-type2 sitemap-last"><a href="#">BRANCH LOCATIONS</a></li>
+    					<li class="sitemap-type1"><a href="#">ACCOUONT</a></li>
+    					<li class="sitemap-type2"><a href="#">MY ACCOUONT</a></li>
+    					<li class="sitemap-type2"><a href="#">LIKE LIST</a></li>
+    				</ul>
+    				</div>
+    			</dd>
+    		</dl>
+    	</div>
+    	<div class="footer-bottom">
+			<div class="inner">
+				<address>© 2018 BELIF. ALL RIGHTS RESERVED.</address>
+				<strong><a href="#">CONTACT US</a></strong>
+				<ul>
+					<li><a href="#">STORE POLICY</a></li>
+					<li><a href="#">PRIVACY POLICY</a></li>
+					<li><a href="#">TERMS OF USE</a></li>
+				</ul>
+			</div>
+    	</div>
+    </footer>
+</body>
+</html>
