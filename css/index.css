@@ -223,16 +223,19 @@ anime.timeline({loop: true})
   transition: all ease 1000ms 800ms;
 }
 
-#work-belif .work-bg {
-  background: #1c5182;
+#work-beach-resort .work-bg {
+  background: #845826;
 }
 
+#work-trvl .work-bg {
+  background: #4d1790;
+}
 #work-jeju .work-bg {
   background: #842626;
 }
 
-#work-fan .work-bg {
-  background: #845826;
+#work-belif .work-bg {
+  background: #1c5182;
 }
 
 #work-app .work-bg {
