@@ -230,6 +230,9 @@ anime.timeline({loop: true})
 #work-trvl .work-bg {
   background: #4d1790;
 }
+#work-lavish .work-bg {
+  background: #90175e;
+}
 #work-jeju .work-bg {
   background: #842626;
 }
@@ -314,7 +317,7 @@ anime.timeline({loop: true})
     -0.1px 0.1px 0 var(--clreee), 0.1px 0.1px 0 var(--clreee);
   -webkit-text-stroke: 0.5px var(--clreee);
   color: var(--clr222);
-  padding: 0.75em;
+  padding: 0.5em;
   text-align: center;
   cursor: pointer;
   z-index: 1;
@@ -343,6 +346,7 @@ anime.timeline({loop: true})
   font-weight: 400;
   font-family: 'Playfair Display', serif;
   top: 0;
+  transform: translateY(-6%);
   text-shadow: -0.1px -0.1px 0 var(--clreee), 0.1px -0.1px 0 var(--clreee),
     -0.1px 0.1px 0 var(--clreee), 0.1px 0.1px 0 var(--clreee);
   -webkit-text-stroke: 0.5px var(--clreee);
@@ -360,7 +364,9 @@ anime.timeline({loop: true})
   -webkit-text-stroke: none;
   text-shadow: none;
 }
-
+.work.on .work-title-box {
+  overflow: visible;
+}
 .work-open {
   height: 0;
   overflow: hidden;

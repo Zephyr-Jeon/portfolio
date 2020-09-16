@@ -69,7 +69,7 @@ $(function () {
     var workTop = $('#navWork').offset().top;
     var letterHeight = $('#navWork').height();
     if (browserScrollTop > workTop - letterHeight) {
-      for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 10; i++) {
         $('main')
           .children('section.work')
           .eq(i)
